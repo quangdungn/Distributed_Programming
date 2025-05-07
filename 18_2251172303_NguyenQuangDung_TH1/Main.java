@@ -22,10 +22,12 @@ public class Main {
 
         A = new int[N];
         Random random = new Random();
+        System.out.println("\n>>> Mảng A: ");
         for (int i = 0; i < N; i++) {
-            A[i] = random.nextInt(100000) + 1;
-
+            A[i] = random.nextInt(10) + 1;
+            System.out.print(A[i] + " ");
         }
+        System.out.println("\n\n");
         A[N - 1] = 3;
 
         PrimeCounterThread[] threads = new PrimeCounterThread[K];

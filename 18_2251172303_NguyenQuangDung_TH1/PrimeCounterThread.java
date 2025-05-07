@@ -19,7 +19,7 @@ public class PrimeCounterThread extends Thread {
         for (int i = start; i < end; i++) {
             if (isPrime(Main.A[i])) {
                 primeCount++;
-                System.out.println("T" + id + ": " + Main.A[i] + " : " + formattedTime);
+                System.out.println("T" + id + ": " + Main.A[i] + " : " + formattedTime + "\n");
             }
         }// System.out.println("T" + id + ": " + primeCount + " : " + formattedTime);
     }
